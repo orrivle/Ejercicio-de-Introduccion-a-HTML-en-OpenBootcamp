@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+<style>
+    tr {
+        border: 1px solid #ddd;
+    }
+    tr:nth-child(even) {
+        background-color:  rgba(150, 212, 212, 0.4);
+    }
+    tr:nth-child(even),td:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+    }
+    td {
+        text-align: center;
+    }
+</style>
 <head>
     <title>Ejercicio 02/2 - Tablas en HTML</title>
 </head>
@@ -7,7 +21,30 @@
 <br>
 <div>
     <table>
-        <tr></tr>
+        <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Año de publicación</th>
+            <th>Enlace a Amazon</th>
+        </tr>
+        <tr>
+            <td>El Guardián entre el Centeno</td>
+            <td>J. D. Salinger</td>
+            <td>2010</td>
+            <td><a href="https://www.amazon.es/guardi%C3%A1n-entre-centeno-Libro-Bolsillo/dp/8420674206">Comprar</a></td>        
+        </tr>
+        <tr>
+            <td>El Silmarillon</td>
+            <td>J.R.R. Tolkien</td>
+            <td>1901</td>
+            <td><a href="https://www.amazon.es/El-Silmarillion-Biblioteca-J-Tolkien/dp/8445077538">Comprar</a></td>        
+        </tr>
+        <tr>
+            <td>En Busca de Spinoza</td>
+            <td>Antonio Damasio</td>
+            <td>2011</td>
+            <td><a href="https://www.amazon.es/En-busca-Spinoza-Neurobiolog%C3%ADa-sentimientos/dp/8423344975">Comprar</a></td>        
+        </tr>
     </table>
 </div>
 <body>
